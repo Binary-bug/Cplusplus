@@ -1,0 +1,14 @@
+vector<double>v;
+
+v.push_back(3.4);
+
+
+push_back is called a member function call and is a member function of vector.
+
+
+member-function call:
+	object_name.member-function-name(argument-list)             ###usage
+
+size() is also a member function of vector.
+
+

@@ -1,0 +1,18 @@
+#Some Technical details about switch-statements:
+
+1) The value on which we switch must be of an integer, char, or an enumeration type.In particular, you cannot switch on a string.
+
+2) The values in the case labels must be constant expressions . In particular, you cannot use a variable in a case label.
+
+3) You cannot use the same value for two case labels.
+
+4) You can use several case labels for a single case.
+   Example:
+	   switch(a){
+		case '0':case'2':case'4':case'6':case'8':
+		cout<<"is even\n";
+		break;
+
+5)Always terminate a case with a break, the compiler wont warn if you forget.
+
+

@@ -1,0 +1,5 @@
+cin>>val1>>val2;
+
+both are defined as integer variables
+
+now input reading closes off immediately after the double in the input
