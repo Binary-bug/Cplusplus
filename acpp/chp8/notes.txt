@@ -1,0 +1,1 @@
+The language feature that implements generic functions is called template functions. Templates let us write a single definition for a family of functions or types that behave
