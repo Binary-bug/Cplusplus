@@ -1,0 +1,39 @@
+At its most fundamental level, a class type is a mechanism for combining related data values into a data structure, so that we can treat data structure as a single entity.
+
+
+For example, the Student_info structure that we built 
+
+
+struct Student_info{
+	std::string name;
+	double midterm, final;
+	std::vector<double> homework;
+}
+
+Note:
+
+each object of type Student_info has four data elements: a std::string named name, a std::vector<double> named homework, and two doubles named midterm and final.
+
+
+1) programmers who use the Student_info type may and must manipulate these data elements directly. They may manipulate the data directly because the definition of Student_info has not restricted to the data elements. They must do so because no other operations are available on Student_info.
+
+### Member functions ###
+
+In order to control access to Student_info objects, we need to define an interface that programmers can use. Let's start by defining operations to read a record and to calculate teh overall grade:
+
+
+
+struct Student_info{
+	std::string name;
+	double midterm, final;
+	std::vector<double> homework;
+	
+	std::istream& read(std::istream&);
+	double grade()const;
+};
+
+Now we say that each Student_info object has four data elements, but we've also given Student_info two member functions.
+These member functions will let us read a record from an input stream and claculate the final grade for any Student_info object.
+
+
+The const on the declaration of grade is a promise that calling the grade function will not chnage any of the members of the Student_infobject.
